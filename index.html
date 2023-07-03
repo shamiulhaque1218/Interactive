@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-sky-100 p-2">
+        <div class="flex justify-between items-center">
+            <div class="pl-8">
+                <h2 class="text-2xl font-bold">Interactive </h2>
+                <h2 class="text-base font-medium text-gray-500">Geometry Genius </h2>
+            </div>
+            <div class="pr-8 text-white"> <a href="blog.html" class="py-1 px-3 rounded-md bg-blue-800">Blog</a> </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="lg:grid lg:grid-cols-4 gap-5">
+
+                <!-- Triangle -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-1" id="tri-id"> 
+                    <img src="images/triangle.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Triangle</h2>
+                    <h2 class="p-1">Area (A) = 0.5 x b x h </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="b" class="w-16 bg-gray-100" id="tri-b"> cm 
+                        <input type="text" placeholder="h" class="w-16 bg-gray-100" id="tri-h"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="tri-btn">Calculator</button>
+                    </div>
+
+
+                    <!-- Rectangle -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-2" id="rec-id"> 
+                    <img src="images/rectangle.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Rectangle</h2>
+                    <h2 class="p-1">Area (A) = w x l </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="w" class="w-16 bg-gray-100" id="rec-w"> cm 
+                        <input type="text" placeholder="l" class="w-16 bg-gray-100" id="rec-l"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="rec-btn">Calculator</button>
+                    </div>
+
+
+                    <!-- Parallelogram -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-3" id="par-id"> 
+                    <img src="images/parallelogram.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Parallelogram</h2>
+                    <h2 class="p-1">Area (A) = b x h </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="b" class="w-16 bg-gray-100" id="par-b"> cm 
+                        <input type="text" placeholder="h" class="w-16 bg-gray-100" id="par-h"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="par-btn">Calculator</button>
+                    </div>
+
+                   
+
+                    <!-- Rhombus -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-5" id="rho-id"> 
+                    <img src="images/rhombus.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Rhombus</h2>
+                    <h2 class="p-1">Area (A) = 0.5 x d <sub>1</sub> x d<sub>2</sub> </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="d1" class="w-16 bg-gray-100" id="rho-d1"> cm 
+                        <input type="text" placeholder="d2" class="w-16 bg-gray-100" id="rho-d2"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="rho-btn">Calculator</button>
+                    </div>
+
+                    <!-- Pentagon -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-6" id="pen-id"> 
+                    <img src="images/pentagon.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Pentagon</h2>
+                    <h2 class="p-1">Area (A) = 0.5 x p x b </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="p" class="w-16 bg-gray-100" id="pen-p"> cm 
+                        <input type="text" placeholder="b" class="w-16 bg-gray-100" id="pen-b"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="pen-btn">Calculator</button>
+                    </div>
+
+                    <!-- Ellipse -->
+                <div class="text-center text-base font-medium p-8 shadow-lg md:order-7" id="ell-id"> 
+                    <img src="images/ellipse.png" alt="pic" class="w-50% block m-auto h-48 w-48">
+                    <h2 class="text-base font-medium p-1">Ellipse</h2>
+                    <h2 class="p-1">Area (A) =  &#960ab </h2>
+                    <div class="p-2 pb-6">
+                        <input type="text" placeholder="a" class="w-16 bg-gray-100" id="ell-a"> cm 
+                        <input type="text" placeholder="b" class="w-16 bg-gray-100" id="ell-b"> cm
+                    </div>
+                    <button class="h-9 w-40 rounded-md bg-blue-800 text-white" id="ell-btn">Calculator</button>
+                    </div>
+
+                     <!-- results -->
+                <div class="text-center text-base font-medium shadow-lg md:order-4"> 
+                    
+                    <h2 class="text-center align-center p-4"> <u>Area Calculation</u> </h2>
+                    <table class="table-auto">
+                        
+                        <tbody id="all-result"></tbody>
+                    </table>
+                    
+                    </div>
+                
+            </div>
+
+        </section>
+        
+
+    </main>
+    <script src="js/js.js"></script>
+</body>
+</html>
